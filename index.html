@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Some meta things-->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+     
+      <!-- Add a title -->
+      <title>Play With Pyscript</title>
+      
+      <!-- Add necessary links to make program work with Pyscript-->
+      <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+      <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+  </head>
+  
+  <body>
+    <h1>Playing with Pyscript</h1>
+    <p>Enter some text</p>
+    <!-- Add a text box for the user input-->
+    <input type="text" id="english" placeholder="Type English here..." />
+
+    <!-- Create button for user to click
+          This will call the Python code-->
+    <button py-click="translate_english">Translate</button>
+
+    <!-- Receive the output from the Python code -->
+    <div id="output"></div>
+
+    <!-- Call appropriate Python and JSON files -->
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+  </body>
+</html>
