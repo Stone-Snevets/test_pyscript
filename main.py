@@ -8,7 +8,8 @@ def translate_english(event):
     input_text = document.querySelector("#english")
     english = input_text.value
 
-   user_input = filedialog.askopenfile(initialdir='/', title='Select a Question File to Open', filetypes=(('Text File', '*.txt'), ('PDF File', '*.pdf'), ('DOCX File', '*.docx')))
+    user_input = filedialog.askopenfile(initialdir='/', title='Select a Question File to Open', filetypes=(('Text File', '*.txt'), ('PDF File', '*.pdf'), ('DOCX File', '*.docx')))
+
 
     # Send the file path to the output
     output_div = document.querySelector('#output')
